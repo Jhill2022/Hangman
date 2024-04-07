@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Hangman game</title>
+  </head>
+  <body>
+    <!-- Start screen start -->
+    <header>
+      <div class="start__container menu-bg display-none">
+        <img
+          class="home-logo"
+          src="./assets/images/logo.svg"
+          alt=""
+          srcset=""
+        />
+
+        <button class="start__circle">
+          <img src="./assets/images/icon-play.svg" alt="" srcset="" />
+        </button>
+
+        <button class="start__htp-btn">How to Play</button>
+      </div>
+    </header>
+
+    <!-- Start screen end -->
+
+    <!-- How to play screen start -->
+    <main>
+      <section class="howTo__container">
+        <div class="howTo__top">
+          <button class="howTo__btn">
+            <img src="./assets/images/icon-back.svg" alt="" srcset="" />
+          </button>
+
+          <h1 class="howTo__title">How to Play</h1>
+        </div>
+        <div class="howTo__steps">
+
+          <div class="howTo__card">
+            <h2>01</h2>
+            <h3>Choose a category</h2>
+            <p>First, choose a word category, like animals or movies. The computer then randomly selects a secret word from that topic and shows you blanks for each letter of the word. </p>
+          </div>
+          <div class="howTo__card">
+            <h2>02
+              </h2>
+            <h3>Guess letters</h2>
+            <p>Take turns guessing letters. The computer fills in the relevant blank spaces if your guess is correct. If it's wrong, you lose some health, which empties after eight incorrect guesses.  </p>
+          </div>
+          <div class="howTo__card">
+            <h2>03
+              </h2>
+            <h3>Win or lose</h2>
+            <p>You win by guessing all the letters in the word before your health runs out. If the health bar empties before you guess the word, you lose. </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
