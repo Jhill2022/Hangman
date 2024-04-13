@@ -11,12 +11,13 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
     <title>Frontend Mentor | Hangman game</title>
   </head>
   <body>
     <!-- Start screen start -->
     <header>
-      <div class="start__container menu-bg display-none">
+      <div class="start__container menu-bg ">
         <img
           class="home-logo"
           src="./assets/images/logo.svg"
@@ -34,9 +35,9 @@
 
     <!-- Start screen end -->
 
-    <!-- How to play screen start -->
     <main>
-      <section class="howTo__container">
+    <!-- How to play screen start -->
+      <section class="howTo__container display-none">
         <div class="howTo__top">
           <button class="howTo__btn">
             <img src="./assets/images/icon-back.svg" alt="" srcset="" />
@@ -64,6 +65,24 @@
             <p>You win by guessing all the letters in the word before your health runs out. If the health bar empties before you guess the word, you lose. </p>
           </div>
         </div>
+      </section>
+      <!-- How to play screen end -->
+      <!-- Pick a category screen start -->
+      <section class="pac__container display-none">
+        <div class="pac__top">
+          <button class="pac__btn">
+            <img src="./assets/images/icon-back.svg" alt="" srcset="" />
+          </button>
+
+          <h1 class="pac__title">Pick a Category</h1>
+        </div>
+          <div class="pac__cards">
+            <ul class="pac__lists">
+             
+              
+            </ul>
+          </div>
+        
       </section>
     </main>
   </body>

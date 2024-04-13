@@ -18,7 +18,7 @@ body {
   width: 100%;
   font-family: 'Mouse Memoirs';
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   margin: 0;
@@ -40,10 +40,11 @@ header {
 .start__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 4rem;
-  transform: translateY(-11px);
   position: relative;
+  margin-top: 120px;
 }
 
 .start__circle {
@@ -53,8 +54,8 @@ header {
   border-right: 2px solid #261676;
   border-left: 2px solid #261676;
   border-radius: 50%;
-  width: 260px;
-  height: 260px;
+  width: 160px;
+  height: 160px;
   padding: 10px;
   margin-top: 140px;
   cursor: pointer;
@@ -90,7 +91,7 @@ header {
 .start__htp-btn {
   border: none;
   background-color: #2463ff;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bolder;
   font-family: 'Mouse Memoirs';
   color: white;
@@ -103,9 +104,13 @@ header {
   border-radius: 50px;
   cursor: pointer;
   transition: 0.3s;
-  padding: 10px 0px;
-  width: 100%;
+  margin-bottom: 10px;
+  width: 70%;
   max-width: 360px;
+}
+
+.start__circle {
+    cursor: pointer;
 }
 
 /**********  How To Play ********/
@@ -121,7 +126,7 @@ header {
 .howTo__top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
 }
 
 .howTo__btn {
@@ -137,13 +142,6 @@ header {
 .howTo__btn img {
   width: 100%;
   height: 100%;
-}
-
-.howTo__steps {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .howTo__card {
@@ -189,7 +187,85 @@ header {
   -moz-background-clip: text;
   font-size: 50px;
 }
+/**********  Pick a category ********/
 
+.pac__container {
+  
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 685px;
+    height: 100vh;
+  }
+  
+  .pac__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .pac__btn {
+    border: none;
+    background: linear-gradient(#fc90fc, #7199ff);
+    box-shadow: inset 0 -4px 0px 2px #9e2df558;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+  }
+  
+  .pac__btn img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pac__title {
+    background-color: white;
+    background-image: linear-gradient(#67b6ff, white);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -moz-background-clip: text;
+    font-size: 50px;
+  }
+
+  .pac__list {
+    background-color: #2361FF;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    padding: 0.9rem 0;
+    text-transform: uppercase;
+    box-shadow: inset 0 1px 0px 2px rgba(255, 255, 255, 0.253);
+  }
+
+  .pac__lists {
+    /* margin-top: 3rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .pac__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+     /* Ensure the parent has a set height */
+  }
+  
+
+main{
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
 .display-none {
   display: none;
 }
+
